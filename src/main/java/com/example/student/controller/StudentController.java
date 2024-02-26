@@ -21,7 +21,7 @@ public class StudentController{
 
         idToStu.put(id,student);
         List<Student> st=uniToStu.getOrDefault(University,new ArrayList<>());
-        st.put(student);
+        st.add(student);
         uniToStu.put(University,st);
     }
 
