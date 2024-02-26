@@ -23,6 +23,7 @@ public class StudentController{
         List<Student> st=uniToStu.getOrDefault(University,new ArrayList<>());
         st.add(student);
         uniToStu.put(University,st);
+        return id;
     }
 
 
