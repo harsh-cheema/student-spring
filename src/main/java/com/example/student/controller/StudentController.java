@@ -1,7 +1,11 @@
 
 import com.example.student.model.Student;
 import java.util.*;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
 
+@RestController
+@RequestMapping("/Student")
 public class StudentController{
     Map<String,Student> idToStu=new HashMap<>();
     Map<String,List<Student>> uniToStu=new HashMap<>();
