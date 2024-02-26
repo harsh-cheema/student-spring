@@ -32,7 +32,7 @@ public class StudentController{
     }
 
     @GetMapping("/getStudentById/{id}")
-    public List<Student> getStudentById(@PathVariable String id){
+    public Student getStudentById(@PathVariable String id){
         return idToStu.getOrDefault(id,null);
     }
 
